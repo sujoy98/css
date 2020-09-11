@@ -1,0 +1,99 @@
+/* * will override every style if specifed
+*/
+/*
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+*/
+
+h1{
+	color: green;
+}
+
+body{
+	background-color:#f4f4f4;
+	color:#555555;
+
+	font-family: Arial,Helvetica,sans-serif;
+	font-size:18px;
+	font-weight: normal;
+	
+	/*
+	same as above (compact form)
+	font:normal 18px Arial,Helvetica,sans-serif;*/
+
+/*	add space between lines em is units
+*/	line-height: 1.6em;
+	margin: 0;
+}
+
+/*to style all the a tags
+*/a{
+/*	removing the underline in the tags
+*/	text-decoration: none;
+}
+
+
+/*we are using container class to wrap up the body in the browser
+*/.container{
+
+/*	wecound use 500px in width but by default it will support the default browser size but with % it is adjustable
+*/	width:80%;
+
+/*	margin is spacing around the elements auto will make all margin equal i.e in centre
+*/	margin:auto;
+}
+
+.box-1{
+	background-color:#333333;
+	color: #ffffff;
+
+/*	border style solid dotted dashed double
+	border-radius for curved edges
+*/	
+	border-radius: 15px;
+	border: 5px red solid;
+	border-width: 3px;
+	border-bottom-width: 10px; 
+	border-top-style: dotted;
+
+	padding: 20px;
+
+	margin-top: 20px;
+}
+
+/*
+	text formating -> targetting all h1 tags in box-1 class
+*/.box-1 h1{
+	font-family: Tahoma;
+	font-weight: 600;
+	font-style: italic;
+	text-decoration: underline;
+	text-transform:uppercase;
+	letter-spacing: 0.2em;
+	/*word-spacing: 1em;*/
+}
+
+.box-2{
+	margin-top: 20px;
+	border-radius: 15px;
+	border: 3px dotted red;
+	padding: 20px;
+	margin:20px 0;
+}
+.categories{
+	border: 1px #cccccc solid;
+	padding: 10px;
+	border-radius: 15px;
+}
+.categories h2{
+	text-align: center;
+}
+.categories ul{
+	list-style: square;
+	list-style: none;
+
+}
