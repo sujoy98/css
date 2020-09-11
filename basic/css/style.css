@@ -13,6 +13,9 @@ h1{
 	color: green;
 }
 
+
+/*for the body tag
+*/
 body{
 	background-color:#f4f4f4;
 	color:#555555;
@@ -32,9 +35,34 @@ body{
 
 /*to style all the a tags
 */a{
+
 /*	removing the underline in the tags
 */	text-decoration: none;
+	color: black;
 }
+
+
+/* hover changes color of the a tags when we take the cursor over links
+*/
+a:hover{
+	color: red;
+}
+
+
+/* active changes color of the tags on click
+*/
+a:active{
+	color: green;
+}
+
+/* visited change the color of the links which have been visited
+*/
+/*
+a:visited{
+	color:green;
+}
+*/
+
 
 
 /*we are using container class to wrap up the body in the browser
@@ -84,16 +112,44 @@ body{
 	padding: 20px;
 	margin:20px 0;
 }
+
 .categories{
 	border: 1px #cccccc solid;
 	padding: 10px;
 	border-radius: 15px;
 }
+
 .categories h2{
 	text-align: center;
 }
+
 .categories ul{
 	list-style: square;
 	list-style: none;
-
 }
+
+.categories li{
+	padding: 6px;
+	border-bottom: dashed 2px #333333;
+/*	to add any image before list
+*/	
+	list-style-image: url('/home/sujoy/Desktop/cssDemo/images/check.png');
+}
+
+.my-form{
+	padding: 20px;
+}
+
+/*adding space between the group items
+targeting form-group inside my-form
+*/
+.my-form .form-group{
+	padding-bottom: 15px;
+}
+
+/*to make the label on seperate line form the input area*/
+.my-form label{
+	display: block;
+}
+
+/*timestamp 47:13*/
