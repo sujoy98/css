@@ -1,4 +1,4 @@
-/* * will override every style if specifed
+ * will override every style if specifed
 */
 /*
 
@@ -17,7 +17,7 @@ h1{
 /*for the body tag
 */
 body{
-	background-image: url(/home/sujoy/Desktop/cssDemo/images/background_master.jpg);
+	background-image: url(/home/sujoy/Desktop/cssDemo/basic/images/background_master.jpg);
 	background-color:#f4f4f4;
 	color:#555555;
 
@@ -159,7 +159,7 @@ a:visited{
 	border-bottom: dashed 2px white;
 /*	to add any image before list
 */	
-	list-style-image: url('/home/sujoy/Desktop/cssDemo/images/check.png');
+	list-style-image: url('/home/sujoy/Desktop/cssDemo/basic/images/check.png');
 }
 
 .my-form{
@@ -237,7 +237,7 @@ targeting form-group inside my-form
 	/*we have to make this relative in order to move around 
 	the h1 and h2 tags inside the margin*/
 	position:relative;
-	background-image: url(/home/sujoy/Desktop/cssDemo/images/background.png);
+	background-image: url(/home/sujoy/Desktop/cssDemo/basic/images/background.png);
 
 /*	to avoid image repeat we use background-repeat*/
 	background-repeat: no-repeat;
@@ -277,7 +277,9 @@ targeting form-group inside my-form
 	color:white;
 }
 
-.my-list li:first-child{
+
+/* psuedo class*/
+.my-list li:first-child{ 
 	background-color:red;
 }
 
@@ -302,4 +304,3 @@ in this case we are targeting the third (3) list element
 .my-list li:nth-child(odd){
 	background-color:lightgreen;
 }
-*/
