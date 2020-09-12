@@ -17,6 +17,7 @@ h1{
 /*for the body tag
 */
 body{
+	/*background-image: url(/home/sujoy/Desktop/cssDemo/images/background.png);*/
 	background-color:#f4f4f4;
 	color:#555555;
 
@@ -26,7 +27,8 @@ body{
 	
 	/*
 	same as above (compact form)
-	font:normal 18px Arial,Helvetica,sans-serif;*/
+	font:normal 18px Arial,Helvetica,sans-serif;
+	*/
 
 /*	add space between lines em is units
 */	line-height: 1.6em;
@@ -38,7 +40,7 @@ body{
 
 /*	removing the underline in the tags
 */	text-decoration: none;
-	color: black;
+	color: white;
 }
 
 
@@ -75,8 +77,29 @@ a:visited{
 */	margin:auto;
 }
 
-.box-1{
+/*we need to clear fix whenever we use float something
+	before anathor markup tags
+*/
+.clr{
+	clear:both;
+}
+
+/*targeting all button
+*/
+.button{
 	background-color:#333333;
+	color:#ffffff;
+	padding: 10px 15px;
+	border: none;
+}
+
+.button:hover{
+	background-color: red;
+	color: #ffffff;
+}
+
+.box-1{
+	/*background-color:#333333;*/
 	color: #ffffff;
 
 /*	border style solid dotted dashed double
@@ -106,6 +129,8 @@ a:visited{
 }
 
 .box-2{
+	/*background-color: #333333;*/
+	color:#ffffff;
 	margin-top: 20px;
 	border-radius: 15px;
 	border: 3px dotted red;
@@ -147,9 +172,87 @@ targeting form-group inside my-form
 	padding-bottom: 15px;
 }
 
-/*to make the label on seperate line form the input area*/
+/*to make the label on seperate line form the input area, block view
+*/
 .my-form label{
 	display: block;
 }
 
-/*timestamp 47:13*/
+
+/*targeting all text input and text area
+*/
+.my-form input[type="text"], .my-form textarea{
+	padding: 8px;
+	width:100%;
+}
+
+.block{
+	float:left;
+	width:33.3%;
+	border:1px solid #cccccc;
+	padding:10px;
+/*	to compile and apply the above style into all the blocks we need 
+	box-sizing: border-box
+*/
+	box-sizing: border-box;
+}
+
+#main-block{
+	float:left;
+	width:70%;
+	padding:15px;
+	box-sizing: border-box;
+}
+
+#sidebar{
+	float:right;
+	width:30%;
+	background-color:#333333;
+	color:#ffffff;
+	padding:15px;
+	box-sizing: border-box;
+}
+
+.p-box{
+	width:800px;
+	height: 500px;
+	border:1px solid #000000;
+	margin-top: 20px;
+	margin-left: 20px;
+	/*we have to make this relative in order to move around 
+	the h1 and h2 tags inside the margin*/
+	position:relative;
+	background-image: url(/home/sujoy/Desktop/cssDemo/images/background.png);
+
+/*	to avoid image repeat we use background-repeat*/
+	background-repeat: no-repeat;
+
+/* we can also adjust the position of the background image */
+	/*background-position: 100px 200px;*/
+
+/* we can also use this */
+	background-position: center center;
+}
+
+.p-box h1{
+	/*along-side with relative position of the p-box we need to 
+	make the h1 tag absolute to move around inside the margin*/ 
+	position:absolute;
+	top:100px;
+	left:200px;
+}
+
+.p-box h2{
+	/*along-side with relative position of the p-box we need to 
+	make the h2 tag absolute to move around inside the margin*/ 
+	position:absolute;
+	bottom:40px;
+	right:100px;
+}
+
+/*to make something fixed in webpage
+*/
+.fix-me{
+	position: fixed;
+	top: 200px;
+}
