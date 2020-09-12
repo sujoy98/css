@@ -278,8 +278,13 @@ targeting form-group inside my-form
 }
 
 
+<<<<<<< HEAD
 /* psuedo class*/
 .my-list li:first-child{ 
+=======
+/* psuedo class */
+.my-list li:first-child{
+>>>>>>> 4bbb0c73549c5f7dfb67d8dd06c96d2d7ee0bd59
 	background-color:red;
 }
 
@@ -304,3 +309,7 @@ in this case we are targeting the third (3) list element
 .my-list li:nth-child(odd){
 	background-color:lightgreen;
 }
+<<<<<<< HEAD
+=======
+*/
+>>>>>>> 4bbb0c73549c5f7dfb67d8dd06c96d2d7ee0bd59
