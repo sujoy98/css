@@ -17,7 +17,7 @@ h1{
 /*for the body tag
 */
 body{
-	/*background-image: url(/home/sujoy/Desktop/cssDemo/images/background.png);*/
+	background-image: url(/home/sujoy/Desktop/cssDemo/images/background_master.jpg);
 	background-color:#f4f4f4;
 	color:#555555;
 
@@ -146,6 +146,7 @@ a:visited{
 
 .categories h2{
 	text-align: center;
+	color: white;
 }
 
 .categories ul{
@@ -155,7 +156,7 @@ a:visited{
 
 .categories li{
 	padding: 6px;
-	border-bottom: dashed 2px #333333;
+	border-bottom: dashed 2px white;
 /*	to add any image before list
 */	
 	list-style-image: url('/home/sujoy/Desktop/cssDemo/images/check.png');
@@ -172,10 +173,15 @@ targeting form-group inside my-form
 	padding-bottom: 15px;
 }
 
+/*.my-form .form-group label{
+	color: white;
+}*/
+
 /*to make the label on seperate line form the input area, block view
 */
 .my-form label{
 	display: block;
+	color: white;
 }
 
 
@@ -197,20 +203,29 @@ targeting form-group inside my-form
 	box-sizing: border-box;
 }
 
+.block p,h3{
+	color:white;
+}
+
 #main-block{
 	float:left;
 	width:70%;
 	padding:15px;
 	box-sizing: border-box;
+	color: white;
 }
+/*#main-block p{
+	color: white;
+}*/
 
-#sidebar{
+.sidebar{
 	float:right;
 	width:30%;
 	background-color:#333333;
 	color:#ffffff;
 	padding:15px;
 	box-sizing: border-box;
+	color: white;
 }
 
 .p-box{
@@ -254,5 +269,37 @@ targeting form-group inside my-form
 */
 .fix-me{
 	position: fixed;
+	/* right,left, bottom*/
 	top: 200px;
 }
+
+.my-list{
+	color:white;
+}
+
+.my-list li:first-child{
+	background-color:red;
+}
+
+.my-list li:last-child{
+	background-color:blue;
+}
+
+/* we can target any element inside parenthesis
+in this case we are targeting the third (3) list element
+*/
+.my-list li:nth-child(3){
+	background-color:lightgreen;
+}
+
+
+/* we can also target as all even or odd*/
+
+/*
+.my-list li:nth-child(even){
+	background-color:black; 
+}
+.my-list li:nth-child(odd){
+	background-color:lightgreen;
+}
+*/
