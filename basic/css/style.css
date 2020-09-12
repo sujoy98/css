@@ -277,6 +277,8 @@ targeting form-group inside my-form
 	color:white;
 }
 
+
+/* psuedo class */
 .my-list li:first-child{
 	background-color:red;
 }
