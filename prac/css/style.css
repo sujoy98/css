@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: grey;
+    color:yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    /* short form */
+    font: normal 12px Verdana, Geneva, Tahoma, sans-serif;
+
+    line-height: 1.6em;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color:red;
+}
+a:active{
+    color:green;
+}
+/* a:visited{
+    color: yellow;
+} */
+
+.box-1{
+    background-color:black;
+    color: white;
+    border: 5px red dotted;
+    padding: 10px;
+    margin: 20px;
+}
+
+.box-1 h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.box-2{
+    border: 3px dotted red;
+    padding: 10px;
+    margin: 20px;
+    background-color:black;
+
+}
+.containers{
+    width: 80%;
+    margin: auto;
+}
+.categories{
+    margin-left: 20px;
+    border: 1px black solid;
+    padding: 10px;
+}
+.categories li{
+    margin-left: 30px;
+    padding-bottom: 6px;
+    border-bottom: solid 1px red;
+    list-style-image: url('/basic/images/check.png');
+}
+.categories h2{
+    text-align: center;
+}
+.categories ul{
+    list-style: none;
+}
+
+.my-form{
+    padding: 20px;
+}
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+.my-form input[type="submit"]{
+    background-color: black;
+    color: blanchedalmond;
+    padding:10px 15px;
+    border: none;
+}
