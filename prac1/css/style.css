@@ -4,7 +4,7 @@
 }
 body{
     background-color: grey;
-    color:yellow;
+    color:black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     font-weight: normal;
@@ -28,7 +28,9 @@ a:active{
 /* a:visited{
     color: yellow;
 } */
-
+.clr{
+    clear: both;
+}
 .box-1{
     background-color:black;
     color: white;
@@ -49,13 +51,25 @@ a:active{
     border: 3px dotted red;
     padding: 10px;
     margin: 20px;
-    background-color:black;
+    background-color:burlywood;
 
 }
 .containers{
     width: 80%;
     margin: auto;
 }
+
+.button{
+    background-color: black;
+    color: blanchedalmond;
+    padding:6px;
+    border: none;
+}
+.button:hover{
+    background-color:red;
+    color: white;
+}
+
 .categories{
     margin-left: 20px;
     border: 1px black solid;
@@ -90,9 +104,72 @@ a:active{
     width: 100%;
 }
 
-.my-form input[type="submit"]{
+.block{
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+    border: 1px solid black;
+    /* to reformat the three blocks from the html */
+    box-sizing: border-box; 
+
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+#sidebar{
+    float: right;
+    width: 30%;
     background-color: black;
-    color: blanchedalmond;
-    padding:10px 15px;
-    border: none;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: solid black 1px;
+    margin-top: 30px;
+    position: relative;
+    
+    background-image: url("../images/tree-736885.jpg");
+    background-position: 100px 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.p-box h1{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+}
+
+.fix-me{
+    position: fixed;
+    top: 400px;
+}
+
+.my-list li:first-child{
+    background-color: khaki;
+}
+.my-list li:last-child{
+    background-color:lightgreen;
+}
+.my-list li:nth-child(5){
+    background-color:lightpink;
+}
+.my-list li:nth-child(even){
+    background-color:lightpink;
+}
+.my-list li:nth-child(odd){
+    background-color:lightseagreen;
 }
