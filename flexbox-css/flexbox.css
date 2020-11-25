@@ -1,0 +1,59 @@
+.container-1 {
+    display: flex;
+    
+    /* adjusting the container size on base of their content size */
+    /* align-items:flex-start ; */
+
+    /* changing the rows to coloumns and opposite */
+ /* flex-direction: row;
+    flex-direction: column; */
+}
+.container-2 {
+    display: flex;
+    /* using justify-content to arrange the container2*/
+    
+    /* space-between add space margin between the box to scale it with the other box */
+    justify-content: space-between;
+
+}
+
+.container-3 {
+    display: flex;
+    
+    /* same as text-wrapping */
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.container-3-box {
+    flex-basis: 12%;
+}
+
+.container-1 div, .container-2 div, .container-3 div{
+    border: 1px grey solid;
+    padding: 10px;
+}
+
+.box-1 {
+    /* adjust the box sizes */
+    flex: 2;
+
+    /* to rearrange the position of the boxes we use order */
+    order: 2;
+}
+
+.box-2 {
+    flex: 1;
+    order: 1;
+}
+
+.box-3 {
+    flex: 1;
+    order: 3;
+}
+
+.container-2-box {
+    /* we can replace 'width' with 'flex-basic' */
+    /* width: 27%; */
+    flex-basis: 27%;
+}
