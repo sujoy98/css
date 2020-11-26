@@ -7,10 +7,11 @@
     /* changing the rows to coloumns and opposite */
  /* flex-direction: row;
     flex-direction: column; */
+    
 }
 .container-2 {
     display: flex;
-    /* using justify-content to arrange the container2*/
+    /* using justify-content to arrange or align the container2*/
     
     /* space-between add space margin between the box to scale it with the other box */
     justify-content: space-between;
